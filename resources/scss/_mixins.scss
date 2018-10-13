@@ -1,0 +1,13 @@
+@mixin glow-text($color1, $color2) {
+    color: $color1;
+    text-shadow:
+        0 0 0.2em $color2,
+        0 0 0.4em $color2,
+        0 0 0.6em $color2,
+        0 0 0.8em $color1,
+        0 0 1.0em $color1;
+}
+
+@mixin glow-box-shadow($color) {
+    box-shadow: 0 0 3px 3px $color;
+}

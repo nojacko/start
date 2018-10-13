@@ -1,0 +1,128 @@
+@import "_variables";
+@import "_bootstrap";
+@import "_mixins";
+
+/*!
+* App
+*/
+body {
+    margin: 25px 0;
+    line-height: 1.2;
+    font-size: 2em;
+    font-family: $font-family-default;
+
+    @media (min-width: $screen-xs-min) {
+        margin: 50px 0;
+    }
+
+    small {
+        font-size: 50%;
+    }
+
+    a {
+        @include glow-text(White, Black);
+        &:hover, &:active, &:focus {
+            color: White;
+        }
+    }
+
+    #background {
+        z-index: 2;
+    }
+
+    #background_2{
+        z-index: 1;
+    }
+
+    .background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        #background-source {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 60%;
+            font-weight: normal;
+            text-align: right;
+        }
+    }
+
+    #main {
+        @include glow-text(White, Black);
+
+        display: block;
+        position: relative;
+        z-index: 5;
+        margin: 0 auto;
+        width: 90%;
+
+        #greeting {
+            display: block;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 200%;
+        }
+
+        #time {
+            display: block;
+            margin-bottom: 25px;
+
+            text-align: center;
+            font-size: 400%;
+
+            @media (max-width: $screen-xs-min) {
+                font-size: 200%;
+            }
+
+            small {
+                display: inline-block;
+                margin: 0 0 0 5px;
+                line-height: 0.9;
+                font-size: 40%;
+            }
+        }
+
+        #date {
+            display: block;
+            margin-bottom: 25px;
+
+            text-align: center;
+            font-size: 200%;
+        }
+    }
+
+    #settings {
+        display: none;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+
+        width: 250px;
+        padding: 5px;
+        border: 1px solid Black;
+        border-radius: 5px;
+        background-color: $colour-white-75;
+        z-index: 5;
+    }
+
+    #settings-icon {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 60%;
+        font-weight: normal;
+        z-index: 6;
+    }
+}

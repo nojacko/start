@@ -1,0 +1,21 @@
+{
+  "name": "start-nojacko-com",
+  "version": "0.0.0",
+  "authors": [
+    "James Jackson <git@nojacko.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bag.js": "~0.1.4",
+    "moment": "~2.11.0",
+    "URIjs": "1.15.2",
+    "bootstrap-sass": "~3.3.6",
+    "external-links-js": "nojacko/external-links-js"
+  }
+}

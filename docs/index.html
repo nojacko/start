@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" type="text/css">
+    <link href="/app/app.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="background" class="background">
+        <div id="background-source">
+            <a href="#" target="_blank"></a>
+        </div>
+    </div>
+    <div id="background_2" class="background"></div>
+
+    <div id="main">
+        <div id="greeting">&nbsp;</div>
+        <div id="time">&nbsp;</div>
+        <div id="date">&nbsp;</div>
+    </div>
+
+    <div id="settings">
+        <form>
+            <div class="form-group form-group-sm">
+                <label class="control-label" for="formGroupInputSmall">Subreddit</label>
+                <input class="form-control" type="text" id="settings_subreddit" placeholder="EarthPorn">
+            </div>
+            <div class="form-group form-group-sm">
+                <label class="control-label" for="formGroupInputSmall">Timing</label>
+                <input class="form-control" type="text" id="settings_timing" placeholder="30">
+            </div>
+
+            <button type="button" class="btn btn-xs btn-default" id="settings_save">Save</button>
+            <button type="button" class="btn btn-xs btn-default" id="settings_reset">Reset</button>
+        </form>
+    </div>
+
+    <div id="settings-icon">
+        <a href="#">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/app/libs.js"></script>
+    <script src="/app/app.js"></script>
+</body>
+</html>
